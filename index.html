@@ -10,7 +10,7 @@
     <header>
       <nav>
         <div class="logo">
-          <h1>DANDY</h1>
+          <h1>Men's Wear</h1>
         </div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -18,10 +18,16 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <img
+          src="manu.png"
+          alt="nopicture"
+          class="menu-icon"
+          onclick="toogleMenu()"
+        />
       </nav>
     </header>
     <section id="home">
-      <h2>WELCOME TO DANDY STREETWEAR STYLES</h2>
+      <h2>WELCOME TO Men's Wears STREETWEAR STYLES</h2>
       <p>
         Find the best and quality products <br /><strong
           >This Is The Style Of Your Choice</strong
@@ -76,7 +82,24 @@
       <p>Get in touch with us for any inquiries.</p>
     </section>
     <footer>
-      <p>&copy; 2024 DANDY STREETWEAR STYLES. All rights reserved.</p>
+      <p>&copy; 2024 Men's WEAR STYLES. All rights reserved.</p>
     </footer>
+
+    <script>
+      let navbar = document.querySelector("nav");
+      let menuLinks = document.getElementById("menu-links");
+
+      function toogleMenu() {
+        menuLinks.classList.toggle("show-menu");
+      }
+
+      window.onscroll = function () {
+        if (window.scrollY > 0) {
+          navbar.style.background = "#eefff9";
+        } else {
+          navbar.style.background = "transparent";
+        }
+      };
+    </script>
   </body>
 </html>
