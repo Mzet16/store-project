@@ -20,7 +20,7 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  background: #333;
+  background: #000000;
   color: #fff;
   padding: 10px 0;
 }
@@ -59,6 +59,7 @@ section {
 #home {
   background: #f4f4f4;
   text-align: center;
+  height: fit-content;
 }
 
 #shop {
@@ -102,12 +103,16 @@ footer {
     display: flex;
     justify-content: left;
     justify-content: space-between;
+    padding: 2px;
   }
 
   nav .nav-links {
     display: none;
+    flex-direction: column;
   }
-
+  .show-menu .nav-links {
+    display: flex;
+  }
   nav .nav-links li {
     margin-left: 0;
     margin-top: 10px;
@@ -144,5 +149,12 @@ footer {
   }
   .show-menu {
     max-height: 200px;
+    display: block;
+  }
+  #home {
+    height: 60px;
+  }
+  #home br {
+    display: none;
   }
 }
