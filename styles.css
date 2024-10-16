@@ -101,22 +101,21 @@ footer {
 @media (max-width: 768px) {
   nav {
     display: flex;
-    justify-content: left;
+
     justify-content: space-between;
     padding: 2px;
   }
 
   nav .nav-links {
     display: none;
-    flex-direction: column;
   }
   .show-menu .nav-links {
-    display: flex;
+    display: block;
   }
   nav .nav-links li {
     margin-left: 0;
     margin-top: 10px;
-    font-size: smaller;
+    font-size: 20px;
   }
   #shop .product-item {
     width: calc(50% - 20px);
@@ -153,8 +152,5 @@ footer {
   }
   #home {
     height: 60px;
-  }
-  #home br {
-    display: none;
   }
 }
